@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI
 
 # Controls when the action will run. 
@@ -36,8 +34,7 @@ jobs:
           cmd: install
 
       - name: creating build
-        uses: linchpin/action-build-yarn-npm@master
-        
+        run: yarn build
 
       - name: installing surge
         run: npm install --global surge
